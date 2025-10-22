@@ -15,6 +15,10 @@ Walkthrough of my setup and changes I made within an Active Directory environmen
 <h2>Active Directory walk-through:</h2>
 <h3>Creation of OU's and moving users to a OU</h3>
 <p align="center">
+I started by creating and adding an Organizational Unit defined by the name "Finance":  <br/>
+<img src="https://image2url.com/images/1761166178302-ba3762fd-7b6d-43ee-82b1-3acee50a28b0.png" height="80%" width="80%" alt="AD Steps"/>
+<br/>
+<br/>
 Adding the user "bglasgow" to the Finance OU: <br/>
 <img src="https://image2url.com/images/1761091079502-039bd6a3-1b1b-4f09-b607-9b5b35d7ec4f.png" height="80%" width="80%" alt="AD Steps"/>
 <br />
@@ -33,12 +37,24 @@ Creation of a new OU that is titled IT Department: <br/>
 <img src="https://image2url.com/images/1761090238333-4d890e61-d25f-466d-a1e3-d44580fd1121.png" height="80%" width="80%" alt="AD Steps"/>
 <br/>
 <br/>
+Adding the user "hskipper" to the IT Department OU:  <br/>
+<img src="https://image2url.com/images/1761166200358-7b1ab724-c087-42de-b1ef-98658fe44d16.png" height="80%" width="80%" alt="AD Steps"/>
+<br />
+<img src="https://image2url.com/images/1761166226548-ee515c0d-7519-4852-820a-4289b7e0cae4.png" height="80%" width="80%" alt="AD Steps"/>
+<br/>
+<br/>
 <h3>Security Groups</h3>
 <p align="center">
 Creation of a global "IT Managers" security group in the IT Department:  <br/>
 <img src="https://image2url.com/images/1761090141164-23b2586c-6fac-4676-8821-ebdd679be4b7.png" height="80%" width="80%" alt="AD Steps"/>
 <br/>
 <img src="https://image2url.com/images/1761089885244-b026f6bb-6126-446c-a07e-ad6e54366121.png" height="80%" width="80%" alt="AD Steps"/>
+<br/>
+<br/>
+Adding the users "acoke" and "ispillman" to the IT Managers security group:  <br/>
+<img src="https://image2url.com/images/1761166244588-d79ec9fc-521c-4970-bf1f-a6f55d0f3977.png" height="80%" width="80%" alt="AD Steps"/>
+<br />
+<img src="https://image2url.com/images/1761166259725-75bf859d-b496-4849-a364-3f99260ce321.png" height="80%" width="80%" alt="AD Steps"/>
 <br/>
 <br/>
 Here I am displaying that the "Members" of the IT Managers Group contains different users than that of the IT Department. Seperating any privelaged access that the IT Managers security group gets: <br/>
@@ -48,8 +64,10 @@ Here I am displaying that the "Members" of the IT Managers Group contains differ
 I then created a domain local "ACCT_PERM" security group that I add the "IT Managers" to, allowing the permissions that I assign to the "ACCT_PERM" to be applied to all of the "IT Managers" without having to individually assign each user the authorized permissions:  <br/>
 <img src="https://image2url.com/images/1761090196638-817c1b99-8a4c-4a97-8f81-d8ae2e6bced8.png" height="80%" width="80%" alt="AD Steps"/>
 <br/>
+<img src="https://image2url.com/images/1761166275598-ae776bbd-7adf-461b-a139-c560be99ad47.png" height="80%" width="80%" alt="AD Steps"/>
 <br/>
-Because I want to give the IT Managers certain permissions, I used the delegation wizard to delegate control over the Finance to them. Since they are a in the security group ACCT_PERM, that is who I will delegate the control to:  <br/>
+<br/>
+Because I want to give the IT Managers certain permissions, I used the delegation wizard to delegate control over the Finance OU to them. Since they are a in the security group ACCT_PERM, that is who I will delegate the control to:  <br/>
 <img src="https://image2url.com/images/1761090017071-bcc7af69-b182-4d2c-805a-b12d797d4665.png" height="80%" width="80%" alt="AD Steps"/> <br/>
 <br/>
 I delegated the ability to reset passwords for user accounts in Finance: <br/>
@@ -94,28 +112,8 @@ Defined GPO settings of the changes made:  <br/>
 <img src="https://image2url.com/images/1761091151067-f2b9f509-9c2b-4af9-87e2-42bb2b15c05c.png" height="80%" width="80%" alt="AD Steps"/>
 <br />
 <br />
-24:  <br/>
-<img src="" height="80%" width="80%" alt="AD Steps"/>
-<br />
-<br />
-25:  <br/>
-<img src="" height="80%" width="80%" alt="AD Steps"/>
-<br />
-<br />
-26:  <br/>
-<img src="" height="80%" width="80%" alt="AD Steps"/>
-<br />
-<br />
-27:  <br/>
-<img src="" height="80%" width="80%" alt="AD Steps"/>
-<br />
-<br />
-28:  <br/>
-<img src="" height="80%" width="80%" alt="AD Steps"/>
-<br />
-<br />
 29:  <br/>
-<img src="" height="80%" width="80%" alt="AD Steps"/>
+<img src="https://image2url.com/images/1761166275598-ae776bbd-7adf-461b-a139-c560be99ad47.png" height="80%" width="80%" alt="AD Steps"/>
 <br />
 <br />
 30:  <br/>
