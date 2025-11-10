@@ -112,48 +112,6 @@ Defined GPO settings of the changes made:  <br/>
 <img src="https://image2url.com/images/1761091151067-f2b9f509-9c2b-4af9-87e2-42bb2b15c05c.png" height="80%" width="80%" alt="AD Steps"/>
 <br />
 <br />
-29:  <br/>
-<img src="https://image2url.com/images/1761166275598-ae776bbd-7adf-461b-a139-c560be99ad47.png" height="80%" width="80%" alt="AD Steps"/>
-<br />
-<br />
-30:  <br/>
-<img src="" height="80%" width="80%" alt="AD Steps"/>
-<br />
-<br />
-31:  <br/>
-<img src="" height="80%" width="80%" alt="AD Steps"/>
-<br />
-<br />
-32:  <br/>
-<img src="" height="80%" width="80%" alt="AD Steps"/>
-<br />
-<br />
-33:  <br/>
-<img src="" height="80%" width="80%" alt="AD Steps"/>
-<br />
-<br />
-:  <br/>
-<img src="" height="80%" width="80%" alt="AD Steps"/>
-<br />
-<br />
-:  <br/>
-<img src="" height="80%" width="80%" alt="AD Steps"/>
-<br />
-<br />
-:  <br/>
-<img src="" height="80%" width="80%" alt="AD Steps"/>
-<br />
-<br />
-:  <br/>
-<img src="" height="80%" width="80%" alt="AD Steps"/>
-<br />
-<br />
-:  <br/>
-<img src="" height="80%" width="80%" alt="AD Steps"/>
-<br />
-<br />
-
-
 
 </p>
 
